@@ -19,10 +19,12 @@ jobs:
           flutter config --enable-web
 
       - name: Build
-        run: flutter build web
+        run: |
+          cd example
+          flutter build web
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          publish_dir: ./build/web
+          publish_dir: ./example/build/web
