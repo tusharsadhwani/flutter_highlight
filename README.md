@@ -5,6 +5,8 @@ Syntax highlighter for Flutter. https://git-touch.github.io/highlight/
 > NOTE: this is a fork of https://github.com/git-touch/highlight, with only the
 > flutter_highlight package. This was created to add editable highlight views.
 
+## Web demo [here](https://tusharsadhwani.github.io/flutter_highlight)
+
 ## Usage
 
 ```dart
