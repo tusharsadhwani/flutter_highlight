@@ -124,7 +124,11 @@ class HighlightEditingController extends TextEditingController {
   HighlightEditingController(this.language, this.theme);
 
   @override
-  TextSpan buildTextSpan({TextStyle style, bool withComposing}) {
+  TextSpan buildTextSpan({
+    BuildContext context,
+    TextStyle style,
+    bool withComposing,
+  }) {
     final result = highlight.parse(value.text, language: language);
     final spans = TextSpan(
       style: style,
